@@ -7,6 +7,7 @@ fn main() {
     let mut buffer = vec![0; 10240]; // Even jumbo frames fit
     loop {
         let n = iface.recv(&mut buffer).unwrap();
-        println!("Got {} bytes: \n {:?}", n, buffer.get(0..n));
+        let data = buffer.get(0..n).unwrap();
+        println!("Got {} bytes: \n {:?}", n, data);
     }
 }
