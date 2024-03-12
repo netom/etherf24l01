@@ -1,10 +1,11 @@
 [package]
-name = "audiotap"
+name = "etherf2401l"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-fundsp = "0.16.0"
 tun-tap = "0.1.4"
+serialport = "4.3"
+clap = "4.5"
